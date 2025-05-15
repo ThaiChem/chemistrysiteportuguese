@@ -1,0 +1,113 @@
+section{
+
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: center;
+}
+
+.containerPR{
+  display: flex;
+  text-align: center;
+  width: 20%;
+  vertical-align: top;
+  padding:30px 20px ;
+  box-sizing: border-box;
+  border: 5px solid #007398;
+  border-radius: 10px;
+  min-width: 320px;
+  
+  position:center;
+  margin-top: 20px;
+  margin: 15px;
+  flex-direction: column;
+}
+
+.containerTR{
+
+  display: flex;
+  text-align: center;
+  width: 20%;
+  vertical-align: top;
+   padding:30px 20px ;
+   
+   
+   box-sizing: border-box;
+  border: 5px solid #007398;
+  border-radius: 10px;
+  min-width: 320px;
+  
+  position:center;
+  margin-top: 20px;
+  margin: 15px;
+  flex-direction: column;
+}
+
+.containerVR{
+
+  display: flex;
+  text-align: center;
+  width: 20%;
+  vertical-align: top;
+   padding:30px 20px ;
+   
+   
+   box-sizing: border-box;
+  border: 5px solid #007398;
+  border-radius: 10px;
+  min-width: 320px;
+  
+  position:center;
+  margin-top: 20px;
+  margin: 15px;
+  flex-direction: column;
+}
+
+
+
+.contato{
+
+    background-color: white;
+    color: RoyalBlue;
+    margin-right: 75%;
+    size: 20px;
+    border: none;
+    border-radius: 10px;
+    min-width: 400px;
+    height: 25px;
+          
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.voltar{
+  color:white;
+  font-weight: bold;
+  width: 20%;
+  font-size: 20px;
+  padding: 1%;
+  margin-bottom: 100px;
+  background-color: Navy;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+
+  }
+
+.limpar{
+
+  color:white;
+  font-weight: bold;
+  width: 100px;
+  font-size: 20px;
+  padding: 2%;
+  
+  background-color: Navy;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+   

@@ -1,0 +1,39 @@
+.contato{
+
+    background-color: white;
+    color: RoyalBlue;
+    margin-right: 75%;
+    size: 20px;
+
+
+}
+
+
+
+.button-container {
+    
+    size: 20px;
+    width: 75px;
+    display: flex;
+    flex-direction:column;
+    margin-top: 15px;
+    min-width: 400px;
+    margin: 0 auto;
+    
+}
+
+button {
+    size: 20px;
+    padding: 10px;
+    margin:  25px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color:RoyalBlue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    min-width: 400px;
+
+       
+}
