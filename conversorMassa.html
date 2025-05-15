@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Quimica com Thai - Química sem dúvidas! Conteúdos, ferramentas e curiosidades para o ensino de química.</title>
+		
+		<meta name = "description" content="Química sem dúvidas!Qual a diferença entre massa e peso, como calcular a massa do objeto.">
+		
+		<meta name = "keywords" content=" quimica com thai,masssa, converter massa, massa é diferente de peso, massa em kg, o que é massa, laboratorio, calculo de massa,quimica com Thainara" >
+
+        <meta http-equiv="content-language" content="pt-br"/>
+
+
+		<meta property="og:locale" content="pt_BR" />
+        
+        <meta property="og:title" content="Quimica com Thai - Qual a diferença entre massa e peso, como calcular a massa do objeto." />
+
+        <meta property="og:site_name" content="Quimica com Thai" />
+        
+        <meta property="og:url" content="https://alquimicacomthai.com.br/conversorMassa.html" />
+        
+         <meta name="google-site-verification" content="cpHCBhr-aHlQjLrlW3sJc7_JYW0DEKyHFcKl-p5GYRQ" />
+	    
+        <link rel="canonical" href="https://alquimicacomthai.com.br/conversorMassa.html" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.1">
+
+        <link rel="stylesheet" type="text/css" href="css/conversormassa.css">
+
+
+				
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L87Y230E0L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L87Y230E0L');
+</script>
+
+		
+
+		</head>
+		
+
+
+  <body style="background-color:LightSkyBlue; background-size: cover; background-repeat: no-repeat; min-width:400px; min-height: 800px;">
+
+		<header>
+
+			 <!-- contato-->
+
+		     <button class="contato" id="botaocontato">Deixe seu contato aqui</button>
+
+		     <script src="js/botaocontato.js"></script>
+
+		     <!-- contato-->
+
+				<center><div class="titulo">
+              
+              <h1> <a class ="titulo" href="quimicacomthai.html"> Quimica com Thai </a> </h1>
+              <img src="imagem/download.jpg" class="elermeyer"></div></center>
+              
+
+             <div style="padding: 10px 0px 0px 0px;"></div>
+				<div align="right" style="padding-right: 24px;">
+				  <form style="margin: 0px;" name="s02" target="_blank" action="http://www.google.com/search" method="get">
+				  <input placeholder="Faça sua pesquisa aqui !" value="Faça sua pesquisa aqui !" maxlength="200" style="
+				         background: #FFFFFF  center center no-repeat;
+				         border-radius: 5px;
+				         -moz-border-radius: 5px;
+				         -webkit-border-radius: 5px;
+				         color: #777777;
+				         height: 30px;
+				         padding: 0px 30px;
+				         width: 301px;" type="text" name="q">
+				  <input type="hidden" name="domains" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="sitesearch" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="hl" value="pt-BR">
+				  </form>
+				  <script language="javascript">
+				    $('input[name="q"]').focus(function(i) {
+				      if ($(this).val() == "Faça sua pesquisa aqui !") {
+				        $(this).val("");
+				      }    
+				    });
+				    $('input[name="q"]').blur(function(i) {
+				      if ($(this).val() == "") {
+				        $(this).val("Faça sua pesquisa aqui !");
+				      }    
+				    });
+				  </script>
+				</div>
+				<div style="padding: 10px 0px 0px 0px;"></div>
+        
+      </header>
+
+<div class="convertmassa">
+	<center><h2>Converta a Massa aqui<h2></center>
+
+</div>
+
+<center><section>
+
+<main class="container1">
+
+		<div>
+			<p class="massamg" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Massa em miligrama</p>
+        <input class="miligrama" type="number" placeholder="Digite a massa em mg" >
+
+				<button onclick="resultgrama()">Calcular</button>
+
+
+			<p class="massagrama" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Massa em gramas</p>
+
+			<p class="resultadomassa" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+			<button id="limpar" class="botao limpar" onclick="window.location.href='conversorMassa.html'">Limpar Dados</button>
+
+		</div>
+</main>
+
+
+<main class="container2">
+	<div>
+		<p class="massakg" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Massa em kilograma</p>
+			<input class="kilograma" type="number" placeholder="Digite a massa em kg" >
+
+			<button onclick="resultcalcgrama()">Calcular</button>
+
+
+		<p class="massagrama" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Massa em gramas</p>
+
+		<p class="resultadomassagrama" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+			<button id="limpar" class="botao limpar" onclick="window.location.href='conversorMassa.html'">Limpar Dados</button>
+
+		</main>
+
+	</div>
+
+</section></center>
+
+		<div class = "textomassa">
+			<p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">A massa é uma propriedade física que representa a quantidade de matéria (prótons, elétrons, neutrons e subpartículas) que consiste uma partícula como o átomo, ou  a quantidade de espécies que representam um material. O valor de uma massa é independente do local onde o material se encontra, o valor continua aproximadamente o mesmo se o material estiver em qualquer ponto da Terra ou em outro planeta, ele é representado  no Sistema Internacional de Unidades  em quilogramas (Kg). </p>
+
+			<p class="peso" style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> Massa é diferente de peso. <br><br> Peso = massa x gravidade</p>
+
+			<p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">Massa de um corpo é diferente do seu peso. A massa é uma grandeza escalar que pode ser representada por um número e uma unidade de medida, seu valor é independente do local onde está o corpo. Já o peso é uma força, uma grandeza vetorial que é expressa por um número, uma direção e um sentido expresso por uma seta, ele depende da aceleração gravitacional (gravidade) que age sobre o material. Um mesmo material terá pesos diferentes em locais com aceleração gravitacional diferente. A conversão de uma medida de massa para outra pode ser realizada a partir de uma regra de 3 simples com os valores conhecidos de massa.</p>
+            
+            
+            <p class="relaçaomassas" style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">Exemplos de relação entre massas</p>
+            
+            <p class="relaçaomassas2" style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">
+            1mg corresponde a 0,001 gramas.
+            <br>
+            1 kg corresponde a 1000 gramas.</p>
+
+           <center> <img src ="imagem/questãomassa.jpg" class ="imagemquestaomassa" border="0" width="600" height="300"></center>
+
+           <center> <img src ="imagem/imgquestãomassa.jpg" class ="imagemquestaomassa2" border="0" width="600" height="300"> </center>
+
+		</div>	
+
+<script src ="js/massagrama.js"></script>
+
+<script src ="js/massakg.js"></script>
+
+
+</body>
+
+
+
+<footer>
+    
+    <center><button id="voltar" class="botao voltar" type="button" onclick="window.location.href='quimicacomthai.html'">Voltar para página inicial</button></center>
+				 
+				<center><h4 style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Canal Química com Thainara </h4></center>
+
+				 <div class="canais" style=" margin-top: 10px;">
+				     
+				     <center><p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> Seu apoio é muito bem vindo ! Siga meus canais no Instagram e no Youtube para ter acesso a mais conteúdos. E se gostou do conteúdo, puder e quiser, considere fazer uma doação para ajudar no meu trabalho. Clique no link Paypal para doar de R$ 1 a R$ 5 reais.  </p></center>
+				  
+				  	
+				  	<!--link doação-->
+				 
+				 <center><form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="TBJXWE5LQS2CL" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+                </form></center>
+                    			
+				 <center><a href="https://www.youtube.com/channel/UC651ajUAa4RWz5cMpA5kviA"><center><img src="imagem/canalyoutube.png" border="0" width="100" height="100"></center></a>
+               
+               </div>
+				 
+				
+								 
+				<!--contatos e email-->
+				
+				<center><p class = "email"style="font-size: 20px;font-family: arial;">Email: thainara.almeida.quimica@gmail.com</p></center>
+
+				<center><p class="copyright" style="font-size: 20px;font-family: arial;"> Desenvolvido por Thainara 2023</p></center>
+	
+</footer>
+
+	</html>

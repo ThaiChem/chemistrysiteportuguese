@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Quimica com Thai - Química sem dúvidas! Conteúdos, ferramentas e curiosidades para o ensino de química.</title>
+		
+		<meta name = "description" content="Química sem dúvidas! Conheça o fator de compressibilidade Z.">
+		
+		<meta name = "keywords" content="quimica com thai, laboratório,calcular o fator de compressibilidade Z, o calculo da pressão reduzida, calcular o volume reduzido, calcular a temperatura reduzida, o que é fator de compressibilidade Z,omportamento do gás, fisico quimica, pressão, termoquimica " >
+
+        <meta http-equiv="content-language" content="pt-br"/>
+
+
+		<meta property="og:locale" content="pt_BR" />
+        
+        <meta property="og:title" content="Quimica com Thai - Química sem dúvidas! Conteúdos, ferramentas e curiosidades para o ensino de química" />
+
+        <meta property="og:site_name" content="Quimica com Thai" />
+        
+        <meta property="og:url" content="https://alquimicacomthai.com.br/fatordecompressibilidade.html" />
+        
+        <meta name="google-site-verification" content="cpHCBhr-aHlQjLrlW3sJc7_JYW0DEKyHFcKl-p5GYRQ" />
+	    
+        <link rel="canonical" href="https://alquimicacomthai.com.br/fatordecompressibilidade.html" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.1">
+
+        <link rel="stylesheet" type="text/css" href="css/compressibilidade.css">
+
+        
+		
+		
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L87Y230E0L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L87Y230E0L');
+</script>
+		
+		</head>
+
+		
+
+  
+  <body style="background-color:LightSkyBlue; background-size: cover; background-repeat: no-repeat; min-width: 400px; min-height: 800px;">
+      
+		<center><header>
+
+
+			 <!-- contato-->
+
+		     <button class="contato" id="botaocontato">Deixe seu contato aqui</button>
+
+		     <script src="js/botaocontato.js"></script>
+
+		     <!-- contato-->
+				
+				<div class="titulo">
+              
+              <h1 style="color:Navy; font-stretch: expanded; font-size: 40px;"> Quimica com Thai</h1>
+              <img src="imagem/download.jpg" class="elermeyer"></div>
+
+
+              <!-- barra de pesquisa-->
+            
+                <div style="padding: 10px 0px 0px 0px;"></div>
+				
+				<div align="right" style="padding-right: 24px;">
+				<form style="margin: 0px;" name="s02" target="_blank" action="http://www.google.com/search" method="get">
+				<input placeholder="Faça sua pesquisa aqui !" value="Faça sua pesquisa aqui !" maxlength="200" style="
+				         background: #FFFFFF  center center no-repeat;
+				         border-radius: 5px;
+				         -moz-border-radius: 5px;
+				         -webkit-border-radius: 5px;
+				         color: #777777;
+				         height: 30px;
+				         padding: 0px 30px;
+				         width: 301px;" type="text" name="q">
+				  <input type="hidden" name="domains" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="sitesearch" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="hl" value="pt-BR">
+				  </form>
+				  <script language="javascript">
+				    $('input[name="q"]').focus(function(i) {
+				      if ($(this).val() == "Faça sua pesquisa aqui !") {
+				        $(this).val("");
+				      }    
+				    });
+				    $('input[name="q"]').blur(function(i) {
+				      if ($(this).val() == "") {
+				        $(this).val("Faça sua pesquisa aqui !");
+				      }    
+				    });
+				  </script>
+				</div>
+				<div style="padding: 10px 0px 0px 0px;"></div>  
+
+				<!-- barra de pesquisa-->
+              
+      </header></center>
+
+
+
+	<center><h2 style="color:Navy; font-family: arial; font-size: 25px; font-stretch: expanded;">Calcular a Pressão, Temperatura e Volume Reduzido aqui.</h2></center>
+
+
+<center><section>
+<main class= "containerPR">
+
+	   <div>
+	   <p class= "pressdada" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Pressão Dada</p>
+        <input class="pressãodada" type="number" placeholder="Digite a pressão dada" >
+
+
+			<p class="pressãocritica" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Pressão Critica</p>
+
+				<input class="pressaocritica" type="number" placeholder="Digite a pressão critica" >
+
+				<button onclick="resultadopressaoreduzida()">Calcular</button>
+
+			<p class="pressaoreduzida" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Pressão Reduzida (PR)</p>
+
+			<p class="resultadopressãoreduzida" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Seu resultado aqui</p>
+
+
+      <button id="limpar" class="botao limpar" onclick="window.location.href='fatordecompressibilidade.html'">Limpar Dados</button>
+  </div>
+
+	</main>
+    
+   
+
+
+    <main class= "containerTR">
+
+	   <div>
+	   <p class= "tempdada" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Temperatura Dada</p>
+        <input class="temperaturadada" type="number" placeholder="Digite a temperatura dada" >
+
+
+			<p class="temcritica" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Temperatura Crítica</p>
+
+				<input class="tempcritica" type="number" placeholder="Digite a temperatura critica" >
+
+				<button onclick="resultadotemperaturareduzida()">Calcular</button>
+
+			<p class="tempreduzida" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Temperatura Reduzida (TR)</p>
+
+			<p class="resultadotempreduzida" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Seu resultado aqui</p>
+
+
+      <button id="limpar" class="botao limpar" onclick="window.location.href='fatordecompressibilidade.html'">Limpar Dados</button>
+  </div>
+
+	</main>
+
+<main class= "containerVR">
+
+	   <div>
+	   <p class= "volumedado" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Volume Dado</p>
+        <input class="voldado" type="number" placeholder="Digite o volume dado" >
+
+
+			<p class="volumecritico" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Volume Crítico</p>
+
+				<input class="volcritico" type="number" placeholder="Digite o volume critico" >
+
+				<button onclick="resultadovolumereduzido()">Calcular</button>
+
+			<p class="volumereduzido" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Volume Reduzido (VR)</p>
+			<p class="resultadovolreduzido" style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Seu resultado aqui</p>
+
+
+      <button id="limpar" class="botao limpar" onclick="window.location.href='fatordecompressibilidade.html'">Limpar Dados</button>
+
+  </div>
+
+  <script src ="js/prssaotemperaturavolumereduzido.js"></script>
+
+	</main>
+	</section></center>
+
+    
+    	<h3 style="color:Navy; font-family: arial; font-size: 25px; font-stretch: expanded;">Consultar o Fator de Compressibilidade Z aqui</h3>
+		
+
+
+  <center><img src="imagem/fatorcompressibilidadez.jpg" class="imagemfatorcompressibilidadeZ"></center>
+
+<center><p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align:"> Gráfico com o fator de compressibilidade Z</p></center>
+
+
+	<h4 style="color:Navy; font-family: arial; font-size: 25px; font-stretch: expanded;"> Fator de Compressibilidade </h4>
+
+	
+	<p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">Quando a lei dos gases ideais, PV = nRT , não traduz com precisão o comportamento dos gases reais em função das forças atrativas e repulsivas que atuam nas moléculas, passa a ser importante formular equações mais realistas para o estado dos gases reais e investigar as consequências geradas dessas equações. A equação de estado do gás ideal, PV = RT, é uma relação entre a pressão, volume e temperatura de um mol de gás dentro das condições ideais. <br> <br> Quando o gás apresenta um desvio do comportamento ideal, usa-se o fator de compressibilidade, descrito pela letra Z, para fazer correções do desvio de comportamento. Z é dado pela razão entre PV<sub> molar ideal</sub> e RT, para 1 mol de gás ideal ocupando um volume molar ideal. Z leva em consideração a estrutura molecular e as forças intermoleculares presentes nas moléculas do gás. Para o gás ideal, Z é igual a 1 e é independente da pressão e da temperatura. Fora da idealidade, Z passa a ser uma função tanto da pressão quanto da temperatura. <br> <br> Quando o gás está fora das condições ideais e no estado crítico que indica a existência de gás e líquido, Z possui um valor constante e válido para todos os gases. O estado crítico dos gases  é um estado que não se observa a diferença de liquidos e gases e  serve de referência para estudar o comportamento das moléculas nessa condição e consultar o fator de compressibilidade Z a partir do conhecimento da pressão reduzida, da temperatura reduzida e do volume reduzido.  </p>
+ 
+ 
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/qw92iLOFO3U?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
+
+
+<center><button id="voltar" class="botao voltar" type="button" onclick="window.location.href='quimicacomthai.html'">Voltar para página inicial</button>
+
+
+</body>
+
+
+
+<center><footer>
+    
+    
+	
+	            <center><h4 style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded; margin-top: 10px;">Canal Química com Thainara </h4></center>
+				 
+				 				     
+				     <center><p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> Seu apoio é muito bem vindo ! Siga meus canais no Instagram e no Youtube para ter acesso a mais conteúdos. E se gostou do conteúdo, puder e quiser, considere fazer uma doação para ajudar no meu trabalho. Clique no link Paypal para doar de R$ 1 a R$ 5 reais.  </p></center>
+				  
+				  
+				     
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="TBJXWE5LQS2CL" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+                    			
+				    
+			    					
+        <center><a href="https://www.youtube.com/channel/UC651ajUAa4RWz5cMpA5kviA"><img src="imagem/canalyoutube.png" border="0" width="100" height="100"></a></center>
+                  
+                  			 
+				 
+				<p class = "email"style="font-size: 20px;font-family: arial;">Email: thainara.almeida.quimica@gmail.com</p>
+
+				<p class = "email"style="font-size: 20px;font-family: arial;">&copy; Desenvolvido por Thainara 2023</p> 
+					
+</footer></center>
+
+
+	</html>

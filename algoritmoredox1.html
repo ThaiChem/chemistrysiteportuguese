@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oxidação ou redução</title>
+  
+  <meta name = "description" content="Química sem dúvidas!Conteúdos,ferramentas e curiosidades para o ensino de química.">
+    
+      <meta name = "keywords" content=" quimica com thai, redox, elemento, átomo, elétrons, oxidação e redução, laboratório,ensino de quimica,ferramentas para química,conhecimento químico,química moderna,quimica com Thainara, quimica e habilidades, importancia da quimica, oxirredução, nox, número de oxidação">
+
+        <meta http-equiv="content-language" content="pt-br"/>
+
+
+        <meta property="og:locale" content="pt_BR" />
+        
+        <meta property="og:title" content="Quimica com Thai - Química sem dúvidas! Conteúdos, ferramentas e curiosidades para o ensino de química" />
+
+        <meta property="og:site_name" content="Quimica com Thai" />
+        
+        <meta property="og:url" content="https://alquimicacomthai.com.br/algoritmoredox1.html" />
+        
+        <meta name="google-site-verification" content="cpHCBhr-aHlQjLrlW3sJc7_JYW0DEKyHFcKl-p5GYRQ" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.1">
+      
+        <link rel="canonical" href="https://alquimicacomthai.com.br/algoritmoredox1.html" />
+
+        <link rel="stylesheet"  href="css/algoritmoredox.css">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L87Y230E0L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L87Y230E0L');
+</script>
+
+  
+
+  </head>
+
+
+<center><body style="background-color:LightSkyBlue; background-size: cover; background-repeat: no-repeat; min-width: 400px; min-height: 800px;">
+
+
+   <center><header>
+
+         <!-- contato-->
+
+         <button class="contato" id="botaocontato">Deixe seu contato aqui</button>
+
+         <script src="js/botaocontato.js"></script>
+
+         <!-- contato-->
+          
+        <div class="título">
+      <h1 style="color:Navy; font-stretch: expanded; font-size: 40px;"> Química com Thai </h1>
+              
+         <img src="imagem/download.jpg"></div>
+
+
+                 
+             
+            <!-- barra de pesquisa-->
+             
+             <div style="padding: 10px 0px 0px 0px;"></div>
+
+
+             <div align="right" style="padding-right: 24px;">
+             <form style="margin: 0px;" name="s02" target="_blank" action="http://www.google.com/search" method="get">
+        
+            <input placeholder="Faça sua pesquisa aqui !" value="Faça sua pesquisa aqui !" maxlength="200" style="
+            background: #FFFFFF center center no-repeat;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            color: #777777;
+            height: 30px;
+            padding: 0px 30px;
+            width: 301px;" type="text" name="q">
+
+        
+            <input type="hidden" name="domains" value="https://alquimicacomthai.com.br/" />
+            <input type="hidden" name="sitesearch" value="https://alquimicacomthai.com.br/">
+            <input type="hidden" name="hl" value="pt-BR">
+
+            </form>
+
+    
+    <script language="javascript">
+        $('input[name="q"]').focus(function(i) {
+            if ($(this).val() == "Faça sua pesquisa aqui !") {
+                $(this).val("");
+            }    
+        });
+        $('input[name="q"]').blur(function(i) {
+            if ($(this).val() == "") {
+                $(this).val("Faça sua pesquisa aqui !");
+            }    
+        });
+    </script>
+</div>
+
+<div style="padding: 10px 0px 0px 0px;"></div>
+
+ <!-- barra de pesquisa-->
+
+
+
+</header></center>
+
+
+  <h1>Oxidação  ou redução ?</h1>
+
+  <label for="atomo" style="color:#00008b;">Colocar o nome do átomo aqui.</label>
+  <input type="text" name="atomnome" id="nameaton" style= "width: 200px;height: 30px; font-weight: bold; font-family: arial">
+
+  <label for="valor1"  style="color:#00008b;">Número de oxidação inicial:</label>
+  <input type="number" id="valor1" style="width: 50px;height: 30px;">
+
+  <label for="valor2"  style="color:#00008b;"> Número de oxidação final do átomo:</label>
+  <input type="number" id="valor2" style="width: 50px;height: 30px;">
+
+  <button onclick="compararValores()" style="width: 200px;height: 30px; font-weight: bold;">Comparar</button>
+ 
+
+  <label for="resposta" style="color:#00008b;">Resposta:</label>
+  <input type="text" id="resposta" readonly style="width: 400px;height: 30px;">
+
+  <button onclick="limparPagina()" style="width: 200px;height: 30px; font-weight: bold; ">Tentar Novamente</button>
+
+
+
+  <script>
+    function compararValores() {
+      // Obter valores dos campos de entrada
+      let valor1 = parseFloat(document.getElementById('valor1').value);
+      let valor2 = parseFloat(document.getElementById('valor2').value);
+
+      // Verificar se os valores são números válidos
+      if (isNaN(valor1) || isNaN(valor2)) {
+        document.getElementById('resposta').value = "Inserir valores numéricos válidos.";
+        return;
+      }
+
+      // Comparação maior ou igual javascript
+      let resposta = "";
+      if (valor1 >= valor2) {
+        resposta += `Sofreu redução, ganhou elétrons.`;
+      } else {
+        resposta += `Sofreu oxidação, perdeu elétrons. `;
+      }
+
+      
+
+      
+      document.getElementById('resposta').value = resposta;
+    }
+
+    function limparPagina() {
+      // Limpar campos de entrada e resposta
+      document.getElementById('valor1').value = "";
+      document.getElementById('valor2').value = "";
+      document.getElementById('resposta').value = "";
+      document.getElementById('nameaton').value="";
+    }
+  </script>
+
+
+  <center><input type="button" value="Voltar para a página inicial" onclick="retornarpagina()" style="size: 25px; margin-top: 20px;  padding: 10px;  margin:  25px; font-size: 20px; font-weight: 800; cursor: pointer; background-color:RoyalBlue;  color: white;  border: none;  border-radius: 10px;  min-width: 400px; " ></center>
+      
+      
+      <script> 
+
+        function retornarpagina() {
+      
+      window.location.href = "quimicacomthai.html";
+    }
+      </script>
+      
+</body></center>
+
+
+<center><footer>
+    
+    
+  
+              <center><h4 style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded; margin-top: 10px;">Canal Química com Thainara </h4></center>
+         
+                     
+             <center><p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> Seu apoio é muito bem vindo ! Siga meus canais no Instagram e no Youtube para ter acesso a mais conteúdos. E se gostou do conteúdo, puder e quiser, considere fazer uma doação para ajudar no meu trabalho. Clique no link Paypal para doar de R$ 1 a R$ 5 reais.  </p></center>
+          
+          
+             
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="TBJXWE5LQS2CL" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+                          
+            
+                    
+        <center><a href="https://www.youtube.com/channel/UC651ajUAa4RWz5cMpA5kviA"><img src="imagem/canalyoutube.png" border="0" width="100" height="100"></a></center>
+                  
+                         
+         
+        <p class = "email"style="font-size: 20px;font-family: arial;">Email: thainara.almeida.quimica@gmail.com</p>
+
+        <p class = "email"style="font-size: 20px;font-family: arial;">&copy; Desenvolvido por Thainara 2023</p> 
+          
+</footer></center>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		
+        <meta charset="UTF-8">
+		<title>Quimica com Thai - Química sem dúvidas! Conteúdos, ferramentas e curiosidades para o ensino de química.</title>
+		
+		<meta name = "description" content="Química sem dúvidas!O volume é a quantidade de espaço ocupada pela matéria,como calcular as unidades do volume.">
+		
+		<meta name = "keywords" content=" quimica com thai,conversão de volume,espaço de um material, unidades de volume, galão, metro cubico, mililitros,volume em litros, calculos, calcular volume, volume, centimetros cúbicos, material, educação em quimica " >
+
+        <meta http-equiv="content-language" content="pt-br"/>
+
+
+		<meta property="og:locale" content="pt_BR" />
+        
+        <meta property="og:title" content="Quimica com Thai - O volume é a quantidade de espaço ocupada pela matéria,como calcular as unidades do volume." />
+
+        <meta property="og:site_name" content="Quimica com Thai" />
+       
+        <meta property="og:url" content="https://alquimicacomthai.com.br/conversorVolume.html" />
+        
+        <meta name="google-site-verification" content="cpHCBhr-aHlQjLrlW3sJc7_JYW0DEKyHFcKl-p5GYRQ" />
+
+        <link rel="canonical" href="https://alquimicacomthai.com.br/conversorVolume.html" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.1">
+
+        <link rel="stylesheet" type="text/css" href="css/conversorvolume.css">
+
+		
+		
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L87Y230E0L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L87Y230E0L');
+</script>
+
+
+</head>
+	
+
+  <body style="background-color:LightSkyBlue; background-size: cover; background-repeat: no-repeat; min-width: 400px; min-height: 800px;">
+
+		<header>
+
+			 <!-- contato-->
+
+		     <button class="contato" id="botaocontato">Deixe seu contato aqui</button>
+
+		     <script src="js/botaocontato.js"></script>
+
+		     <!-- contato-->
+
+				<center><div class="titulo">
+              
+              <h1> <a class ="titulo" href="quimicacomthai.html"> Quimica com Thai </a> </h1>
+              <img src="imagem/download.jpg" class="elermeyer"></div></center>
+              
+
+              <div style="padding: 10px 0px 0px 0px;"></div>
+				<div align="right" style="padding-right: 24px;">
+				  <form style="margin: 0px;" name="s02" target="_blank" action="http://www.google.com/search" method="get">
+				  <input placeholder="Faça sua pesquisa aqui !" value="Faça sua pesquisa aqui !" maxlength="200" style="
+				         background: #FFFFFF  center center no-repeat;
+				         border-radius: 5px;
+				         -moz-border-radius: 5px;
+				         -webkit-border-radius: 5px;
+				         color: #777777;
+				         height: 30px;
+				         padding: 0px 30px;
+				         width: 301px;" type="text" name="q">
+				  <input type="hidden" name="domains" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="sitesearch" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="hl" value="pt-BR">
+				  </form>
+				  <script language="javascript">
+				    $('input[name="q"]').focus(function(i) {
+				      if ($(this).val() == "Faça sua pesquisa aqui !") {
+				        $(this).val("");
+				      }    
+				    });
+				    $('input[name="q"]').blur(function(i) {
+				      if ($(this).val() == "") {
+				        $(this).val("Faça sua pesquisa aqui !");
+				      }    
+				    });
+				  </script>
+				</div>
+				<div style="padding: 10px 0px 0px 0px;"></div>
+        
+      </header>
+
+
+<div class="conversorvolume">
+
+	<center><h2>Calcule o Volume aqui</h2></center>
+
+</div>
+
+<section>
+
+<main class="container">
+
+			<div class="dadosVolumeml">
+				<p class="volumemL" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em mL</p>
+	        <input class="ml" type="number" placeholder="Digite o volume em mL" >
+
+					<button onclick="resultlitros()">Calcular</button>
+
+
+				<p class="volumeL" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em Litros</p>
+
+						<p class="resultadovolume" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+					</div>
+
+					<button id="limpar" class="botaolimpar" onclick="window.location.href='conversorVolume.html'">Limpar Dados</button>
+
+</main>
+
+<main class="container2">
+
+					<div class="dadosvolumecm">
+
+						<p class="volumecm³" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em cm³</p>
+			        <input class="cmcubico" type="number" placeholder="Digite o volume em cm³" >
+
+							<button onclick="resultadoLitros()">Calcular</button>
+
+
+						<p class="volumeLitro" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em Litros</p>
+
+								<p class="resultadoVolume" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+		       </div>
+
+					<button id="limpar2" class="botaoLimpar" onclick="window.location.href='conversorVolume.html'">Limpar Dados</button>
+</main>
+
+
+<main class="container3">
+
+					<div class="dadosvolumemetro">
+
+						<p class="volumem³" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em m³</p>
+			        <input class="mcubico" type="number" placeholder="Digite o volume em m³" >
+
+							<button onclick="resultcalcLitros()">Calcular</button>
+
+
+						<p class="volLitro" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em Litros</p>
+
+								<p class="resultadoVolumelitro" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+		       </div>
+
+					<button id="limpar2" class="botaoLimpar" onclick="window.location.href='conversorVolume.html'">Limpar Dados</button>
+  </main>
+
+	<main class="container4">
+
+						<div class="dadosvolumemicrolitros">
+
+							<p class="volumemicrolitros" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em microlitros</p>
+				        <input class="microlitros" type="number" placeholder="Digite o volume em microlitros" >
+
+								<button onclick="resultadoLitros4()">Calcular</button>
+
+
+							<p class="volLitro4" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em Litros</p>
+
+									<p class="resultadoVolumelitro4" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+			       </div>
+
+						<button id="limpar2" class="botaoLimpar" onclick="window.location.href='conversorVolume.html'">Limpar Dados</button>
+	  </main>
+
+
+		<main class="container5">
+
+							<div class="volumegalao">
+
+								<p class="volumegalão" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em Galão Americano</p>
+					        <input class="galão" type="number" placeholder="Digite o volume em Galão Americano" >
+
+									<button onclick="resultadoLitros5()">Calcular</button>
+
+
+								<p class="volLitro5" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em Litros</p>
+
+										<p class="resultadoVolumelitro5" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+				       </div>
+
+							<button id="limpar2" class="botaoLimpar" onclick="window.location.href='conversorVolume.html'">Limpar Dados</button>
+		  </main>
+
+			<main class="container6">
+
+								<div class="volumegalaobrit">
+
+									<p class="volumegalãobrit" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em Galão Britânico</p>
+										<input class="galão2" type="number" placeholder="Digite o volume em Galão Britânico" >
+
+										<button onclick="resultadoLitros6()">Calcular</button>
+
+
+									<p class="volLitro6" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Volume em Litros</p>
+
+											<p class="resultadoVolumelitro6" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+								 </div>
+
+								<button id="limpar2" class="botaoLimpar" onclick="window.location.href='conversorVolume.html'">Limpar Dados</button>
+
+			</main>
+
+		</section>
+
+			<div class = "textovolume"   >
+			
+			<p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">O volume é a quantidade de espaço ocupada por um material ou a capacidade que um material tem de armazenar uma substância. A sua medida padrão é representada no Sistema Internacional de Unidades  em metros cúbicos (m³), onde um cubo com a sua aresta medindo 1 metro  corresponde a uma capacidade de 1m³ ou 1000 litros.</p>
+
+            <p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">Existem também outras medidas de volume utilizadas: centímetro cúbico, decímetro cúbico, litros, mililitros, microlitros e galão. A conversão de uma medida de volume para outra pode ser realizada a partir de uma regra de 3 com os valores conhecidos de volume. </p>
+
+            <p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">Exemplos de relação entre volumes: </p>
+            <p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> 1mL corresponde a 0,001 litros. <br> 1 cm³ corresponde a 0,001 litros <br> 1m³ corresponde a 1000 litros. <br> 1 microlitro corresponde a 1x10<sup>-6</sup> litros. <br> 1 galão americano corresponde a 3.7854 litros. <br> 1 galão britânico corresponde a aproximadamente 4,55 litros. <br><br> </p>
+
+           <center> <p class="comoresolver" style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> Resolvendo a conversão de volumes</p></center>
+            
+            <center><img src="imagem/volumeimagemgalão.jpg" class="volumeimagem1" border="0" width="600" height="300"></center>
+           <center> <img src="imagem/volumeimagemml.jpg" class="volumeimagem2" border="0" width="600" height="300"></center>
+
+			</div>    
+
+			
+	
+
+	<script src ="js/volumelitros.js"></script>
+
+	<script src ="js/volumecmcubico.js"></script>
+
+	<script src ="js/volumemetrocubico.js"></script>
+
+	<script src ="js/volumemicrolitros.js"></script>
+
+	<script src ="js/volumegalaoA.js"></script>
+
+	<script src ="js/volumegalaoB.js"></script>
+
+</body>
+
+
+<footer>
+    
+    <center><button id="voltar" class="botao voltar" type="button" onclick="window.location.href='quimicacomthai.html'">Voltar para página inicial</button></center>
+				 
+				<center><h4 style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Canal Química com Thainara </h4></center>
+
+				 <div class="canais" style=" margin-top: 10px;">
+				     
+				     <center><p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> Seu apoio é muito bem vindo ! Siga meus canais no Instagram e no Youtube para ter acesso a mais conteúdos. E se gostou do conteúdo, puder e quiser, considere fazer uma doação para ajudar no meu trabalho. Clique no link Paypal para doar de R$ 1 a R$ 5 reais.  </p></center>
+				  
+				  	
+				  	<!--link doação-->
+				 
+				 <center><form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="TBJXWE5LQS2CL" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+                </form></center>
+                    			
+				 <center><a href="https://www.youtube.com/channel/UC651ajUAa4RWz5cMpA5kviA"><center><img src="imagem/canalyoutube.png" border="0" width="100" height="100"></center></a>
+               
+               </div>
+				 
+				
+								 
+				<!--contatos e email-->
+				
+				<center><p class = "email"style="font-size: 20px;font-family: arial;">Email: thainara.almeida.quimica@gmail.com</p></center>
+
+				<center><p class="copyright" style="font-size: 20px;font-family: arial;"> Desenvolvido por Thainara 2023</p></center>
+	
+</footer>
+
+
+	</html>

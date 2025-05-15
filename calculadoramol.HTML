@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Quimica com Thai - Química sem dúvidas! Conteúdos, ferramentas e curiosidades para o ensino de química.</title>
+		
+		<meta name = "description" content="Química sem dúvidas!Definição de mol e como calcular a quantidade do composto em mol">
+		
+		<meta name = "keywords" content="calcular mol,massa molecular, o que é mol, quantidade de substancia, mol, substância, quimica com Thainara" >
+
+        <meta http-equiv="content-language" content="pt-br"/>
+
+
+		<meta property="og:locale" content="pt_BR" />
+        
+        <meta property="og:title" content="Quimica com Thai - Química sem dúvidas! Conteúdos, ferramentas e curiosidades para o ensino de química" />
+
+        <meta property="og:site_name" content="Quimica com Thai" />
+        
+        <meta property="og:url" content="https://alquimicacomthai.com.br/calculadoramol.HTML" />
+        
+         <meta name="google-site-verification" content="cpHCBhr-aHlQjLrlW3sJc7_JYW0DEKyHFcKl-p5GYRQ" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.1">
+	    
+        <link rel="canonical" href="https://alquimicacomthai.com.br/calculadoramol.HTML" />
+
+        <link rel="stylesheet" type="text/css" href="css/mol.css">
+
+
+				
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L87Y230E0L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L87Y230E0L');
+</script>
+
+
+          </head>
+
+
+   	<body style="background-color:LightSkyBlue; background-size: cover; background-repeat: no-repeat; min-width: 400px; min-height: 800px;">
+	    
+	    <center><header>
+
+	    	 <!-- contato-->
+
+		     <button class="contato" id="botaocontato">Deixe seu contato aqui</button>
+
+		     <script src="js/botaocontato.js"></script>
+
+		     <!-- contato-->
+		
+
+		   <div class="titulo">
+
+
+			<h1 style="color:Navy; font-stretch: expanded; font-size: 40px;"> Química com Thai </h1>
+				      
+		     <img src="imagem/download.jpg"></div>
+              
+              
+              
+               <!-- barra de pesquisa-->
+
+                <div style="padding: 10px 0px 0px 0px;"></div>
+				<div align="right" style="padding-right: 24px;">
+				  <form style="margin: 0px;" name="s02" target="_blank" action="http://www.google.com/search" method="get">
+				  <input placeholder="Faça sua pesquisa aqui !" value="Faça sua pesquisa aqui !" maxlength="200" style="
+				         background: #FFFFFF  center center no-repeat;
+				         border-radius: 5px;
+				         -moz-border-radius: 5px;
+				         -webkit-border-radius: 5px;
+				         color: #777777;
+				         height: 30px;
+				         padding: 0px 30px;
+				         width: 301px;" type="text" name="q">
+				  <input type="hidden" name="domains" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="sitesearch" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="hl" value="pt-BR">
+				  </form>
+				  <script language="javascript">
+				    $('input[name="q"]').focus(function(i) {
+				      if ($(this).val() == "Faça sua pesquisa aqui !") {
+				        $(this).val("");
+				      }    
+				    });
+				    $('input[name="q"]').blur(function(i) {
+				      if ($(this).val() == "") {
+				        $(this).val("Faça sua pesquisa aqui !");
+				      }    
+				    });
+				  </script>
+				</div>
+				<div style="padding: 10px 0px 0px 0px;"></div>
+
+        
+      </header>
+
+
+  <div class="Calcularmol">
+	
+	<h2 style="color:Navy; font-family: arial; font-size: 25px; font-stretch: expanded;">Calcule a Quantidade de Substância em mol aqui<h2>
+
+</div>
+
+<center><section>
+
+<main class= "container1">
+			<div>
+					<p class= "massadasubstancia" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Massa da substância</p>
+		        <input class="massa" type="number" placeholder="Digite a massa em gramas" >
+
+
+					<p class="massamolecular" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Massa Molar</p>
+
+						<input class="massadamolecula" type="number" placeholder="Digite a massa molar" >
+
+						<button onclick="calcularmol()">Calcular</button>
+
+					<p class="Mol" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Mol</p>
+					<p class="resultadomol" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+					<button id="limpar" class="botao limpar" onclick="window.location.href='calculadoramol.HTML'">Limpar Dados</button>
+
+		</div>
+
+</main>
+
+
+<main class= "container2">
+			<div>
+					<p class= "moldasubstancia" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Quantidade da substância em mol</p>
+		        <input class="molsubstancia" type="number" placeholder="Digite a quantidade em mol" >
+
+
+					<p class="massamolar" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Massa Molar</p>
+
+						<input class="massamolarsubstancia" type="number" placeholder="Digite a massa molar" >
+
+						<button onclick="calcularmassasubst()">Calcular</button>
+
+					<p class="massa2" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Massa em gramas</p>
+					<p class="resultadomassa" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+					<button id="limpar" class="botao limpar" onclick="window.location.href='calculadoramol.HTML'">Limpar Dados</button>
+
+		</div>
+
+</main>
+
+</section></center>
+	
+	<script src ="js/mol.js"></script>
+
+	
+
+	<div class = "textomol" style="font-size: 20px;font-family: arial; font-weight: bold;text-align: justify; margin-left: 30px; margin-right: 30px; position: relative; word-wrap: break-word;">
+
+<center><h3 style="color:Navy; font-family: arial; font-size: 25px; font-stretch: expanded;">Sobre o mol</h3>  </center>
+		
+		<p>A história do mol começa com a descoberta da quantidade de matéria presente em uma substância. O químico suíço Jean-Baptiste Dumas foi um dos primeiros a tentar quantificar a quantidade de matéria presente em uma substância, usando pesos e medidas precisas. Em 1805, ele propôs a utilização do conceito de "grama-molécula" para se referir à quantidade de matéria presente em uma molécula de uma substância.</p>
+
+		<p>O mol é uma unidade de medida muito utilizada na Química, está presente no Sistema Internacional de Unidades e representa a quantidade de matéria microscópica-ou quantidade de entidades elementares - como átomos, moléculas, íons. O termo vem do latin, que significa porção ou quantidade. Uma amostra real de qualquer matéria contém um número enorme de espécies químicas. O mol foi proposto inicialmente por Avogrado para descrever enormes quantidades de espécies químicas (átomos, moléculas, íons) reunidas.  </p>
+
+        <p>O mol é definido no SI como a quantidade de substância presente em 0,012 kg de carbono 12.   <br> Ele pode ser calculado pela relação da massa em gramas da substância e a massa molar que é a soma das massas dos átomos que formaram 1 mol do composto químico. O mol é representado pelo simbolo η. Hoje, o mol é amplamente utilizado em química para expressar a quantidade de matéria presente em uma substância e para calcular a quantidade de matéria presente em reações químicas. Ele é também usado em outras áreas científicas, como biologia, física e engenharia. </p>
+        
+		<p class = "paragrafonegrito"> 1 mol de carbono contém 12g de massa e contém 6,022 x 10<sup>23</sup>  de átomos de carbono reunidos </p>
+
+		<center><img src="imagem/mol.jpg" class="molimagem" border="0" width="600" height="300"></center>
+        
+        <center><img src="imagem/vitcmol.jpg" class="molimagem" border="0" width="600" height="300"></center>
+
+
+</body>
+
+
+<footer>
+    
+    
+
+	<center><button id="voltar" class="botao voltar" type="button" onclick="window.location.href='quimicacomthai.html'" style="">Voltar para página inicial</button></center>
+
+				 
+				 <center><h4 style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Canal Química com Thainara</h4></center>
+
+				 <center><img src="imagem/positivoimg.gif" border="0" width="70" height="70" ></center>
+
+				 
+				 <div class="canais" style=" margin-top: 10px;">
+				     
+				     <center><p style="font-size: 20px;font-family: arial;text-align: justify; font-weight: bold; margin-left:30px; margin-right: 30px; position: relative; word-wrap: break-word;"> Seu apoio é muito bem vindo ! Siga meus canais no Youtube para ter acesso a mais conteúdos. E se gostou do conteúdo, puder e quiser, considere fazer uma doação para ajudar no meu trabalho. Clique no link Paypal para doar de R$ 1 a R$ 5 reais.  </p></center>
+				  
+				  
+				     
+				<center><form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="TBJXWE5LQS2CL" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+                </form></center>
+                    			
+				    
+				   		    	
+				
+                 <center><a href="https://www.youtube.com/channel/UC651ajUAa4RWz5cMpA5kviA"><center><img src="imagem/canalyoutube.png" border="0" width="100" height="100"></center></a>
+               
+               </div>
+				 
+				 
+				 
+				 
+				<!--contatos e email-->
+				
+				<center><p class = "email"style="font-size: 20px;font-family: arial;">Email: thainara.almeida.quimica@gmail.com</p></center>
+
+				<center><p class="copyright" style="font-size: 20px;font-family: arial;"> Desenvolvido por Thainara 2023</p></center>				
+</footer>
+
+	</html>

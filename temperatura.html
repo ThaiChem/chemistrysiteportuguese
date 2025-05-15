@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		
+       <meta charset="UTF-8">
+		<title>Quimica com Thai - Química sem dúvidas! Conteúdos, ferramentas e curiosidades para o ensino de química.</title>
+		
+		<meta name = "description" content="Química sem dúvidas!O que é temperatura e como calcular a temperatura e as unidades.">
+		
+		<meta name = "keywords" content=" quimica com thai, educação, temperatura,converter temperatura, escala Kelvin, escala Fahrenheit, escala termometrica, agitação molecular, calcular teperatura, temperatura em graus celsius, temperatura em kelvin" >
+
+        <meta http-equiv="content-language" content="pt-br"/>
+
+
+		<meta property="og:locale" content="pt_BR" />
+        
+        <meta property="og:title" content="Quimica com Thai - O que é temperatura e como calcular a temperatura e as unidades." />
+
+        <meta property="og:site_name" content="Quimica com Thai" />
+        <meta property="og:url" content="https://alquimicacomthai.com.br/temperatura.html" />
+        
+        <meta name="google-site-verification" content="cpHCBhr-aHlQjLrlW3sJc7_JYW0DEKyHFcKl-p5GYRQ" />
+	    
+        <meta name="viewport" content="width=device-width, initial-scale=1.1">
+
+        <link rel="canonical" href="https://alquimicacomthai.com.br/temperatura.html" />
+
+        <link rel="stylesheet" type="text/css" href="css/temperatura.css">
+
+				
+			<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L87Y230E0L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L87Y230E0L');
+</script>
+
+		
+		</head>
+
+		
+
+  <body style="background-color:LightSkyBlue; background-size: cover; background-repeat: no-repeat; min-width: 400px; min-height: 800px;">
+
+		<header>
+
+			 <!-- contato-->
+
+		     <button class="contato" id="botaocontato">Deixe seu contato aqui</button>
+
+		     <script src="js/botaocontato.js"></script>
+
+		     <!-- contato-->
+
+				<center><div class="titulo">
+              
+              <h1> <a class ="titulo" href="quimicacomthai.html"> Quimica com Thai </a> </h1>
+              <img src="imagem/download.jpg" class="elermeyer"></div></center>
+              
+
+            <div style="padding: 10px 0px 0px 0px;"></div>
+				<div align="right" style="padding-right: 24px;">
+				  <form style="margin: 0px;" name="s02" target="_blank" action="http://www.google.com/search" method="get">
+				  <input placeholder="Faça sua pesquisa aqui !" value="Faça sua pesquisa aqui !" maxlength="200" style="
+				         background: #FFFFFF  center center no-repeat;
+				         border-radius: 5px;
+				         -moz-border-radius: 5px;
+				         -webkit-border-radius: 5px;
+				         color: #777777;
+				         height: 30px;
+				         padding: 0px 30px;
+				         width: 301px;" type="text" name="q">
+				  <input type="hidden" name="domains" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="sitesearch" value="https://alquimicacomthai.com.br/">
+				  <input type="hidden" name="hl" value="pt-BR">
+				  </form>
+				  <script language="javascript">
+				    $('input[name="q"]').focus(function(i) {
+				      if ($(this).val() == "Faça sua pesquisa aqui !") {
+				        $(this).val("");
+				      }    
+				    });
+				    $('input[name="q"]').blur(function(i) {
+				      if ($(this).val() == "") {
+				        $(this).val("Faça sua pesquisa aqui !");
+				      }    
+				    });
+				  </script>
+				</div>
+				<div style="padding: 10px 0px 0px 0px;"></div>
+        
+      </header>
+
+
+	<center><h2>Converta a Temperatura aqui</h2></center>
+
+
+<center><section>
+
+<main class="container1">
+		<div>
+			<p class= "temperatura" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Temperatura em °C</p>
+        <input class="temperaturaceusius" type="number" placeholder="Digite a temperatura em °C">
+
+
+			<button onclick="resultadotemperaturakelvin()" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Calcular</button>
+
+			<p class="temperaturakelvin" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Temperatura em °K</p>
+			<p class="kelvin" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+			<button id="limpar" class="botao limpar" onclick="window.location.href='temperatura.html'">Limpar Dados</button>
+
+</main>
+
+<main class="container2">
+
+<div>
+  <p class= "temperatura2" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Temperatura em °C</p>
+    <input class="temperaturaceusius2" type="number" placeholder="Digite a temperatura em °C" >
+
+
+  <button onclick="resultadotemperaturaF()" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Calcular</button>
+
+  <p class="temperaturaF" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Temperatura em Fahrenheit</p>
+  <p class="Fahrenheit" style="font-size: 20px; font-weight: bold; margin-top: 5px; color:Navy;">Seu resultado aqui</p>
+
+  <button id="limpar" class="botao limpar" onclick="window.location.href='temperatura.html'">Limpar Dados</button>
+
+
+</main>
+
+	</div>
+
+</section></center>
+
+<div class = "textotemperatura">
+
+	<p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">A temperatura é uma grandeza física que está relacionada ao nível de agitação das espécies (átomos, íons ou moléculas) que compõem as substâncias e corpos em geral. Ela é uma propriedade que é independente do tamanho do sistema em estudo, isto é, uma propriedade intensiva. A temperatura é diferente de calor. O calor é uma energia em transito de um corpo com maior temperatura para um corpo com menor temperatura, pode ser medido em calorias ou em joules; a temperatura é uma grandeza que indica o grau de agitação de um corpo.</p>
+
+	<p class = "textodestaque1" style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> Temperatura é diferente de calor</p>
+
+	<p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">A temperatura pode ser medida por meios indiretos, usando aparelhos com padrões de medição  estabelecidos como termómetros. Os termómetros são aparelhos capazes de informar o nível de agitação dos compostos químicos ou de um meio. Os termómetros mais conhecidos são: termómetro de ondas infravermelha, termómetro de gás, e termómetro de vidro com mercúrio. As escalas termométricas são escalas usadas para medir a temperatura, são elas a Kelvin (°K), Celsius (°C) e Fahrenheit (°F). As escalas Kelvin (°K), Celsius (°C) e Fahrenheit (°F) utilizam como padrão de medição os pontos de fusão e de ebulição da água a 1 atm. A escala Kelvin foi proposta pelo físico britânico Lord Kelvin e é usada nas medições científicas e no Sistema Internacional de Unidades. A escala Celsius é usada na medição de temperatura no Brasil. E a escala Fahrenheit é usada na medição das temperaturas nos países da europa e no EUA.  </p>
+
+	<p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;">Para converter um valor de temperatura de uma escala para outra, é importante usar  uma equação capaz de transformar qualquer valor de temperatura entre as escalas termométricas conhecidas. Para converter uma temperatura da escala Celsius para Kelvin, é só somar o valor da temperatura em Celsius mais 273. Para converter uma temperatura da escala Celsius para Fahrenheit, é só multiplicar a temperatura em  Celsius por 1,8 e somar mais 32. </p>
+
+	<p class = "textodestaque1" style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> A partir do conhecimento de uma das temperaturas e das equações é possível realizar a conversão. <br><br><br><br> Temperatura em Kelvin = °C + 273 <br><br> Temperatura em Fahrenheit = 1,8x°C + 32 <br><br><br><br> ESCALAS TERMOMÉTRICAS E COMO RESOLVER </p>
+
+</div>
+
+
+    <center><img src="imagem/apresentação escala termometrica.jpg" class="escalatermomagem" border="0" width="600" height="300"></center>
+
+    <center><img src="imagem/imgquestaotemperatura.jpg" class="escalatermomagem2" border="0" width="600" height="300"></center>
+    
+
+	<script src ="js/tempkelvin.js"></script>
+	<script src ="js/tempF.js"></script>
+
+
+</body>
+
+
+
+<footer>
+    
+    <center><button id="voltar" class="botao voltar" type="button" onclick="window.location.href='quimicacomthai.html'">Voltar para página inicial</button></center>
+				 
+				<center><h4 style=" color: Navy; font-size: 20px;font-family: arial; font-stretch: expanded;">Canal Química com Thainara </h4></center>
+
+				 <div class="canais" style=" margin-top: 10px;">
+				     
+				     <center><p style = "font-size: 20px;font-family: arial; font-weight: bold; text-align: justify;"> Seu apoio é muito bem vindo ! Siga meus canais no Instagram e no Youtube para ter acesso a mais conteúdos. E se gostou do conteúdo, puder e quiser, considere fazer uma doação para ajudar no meu trabalho. Clique no link Paypal para doar de R$ 1 a R$ 5 reais.  </p></center>
+				  
+				  	
+				  	<!--link doação-->
+				 
+				 <center><form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="TBJXWE5LQS2CL" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+                </form></center>
+                    			
+				 <center><a href="https://www.youtube.com/channel/UC651ajUAa4RWz5cMpA5kviA"><center><img src="imagem/canalyoutube.png" border="0" width="100" height="100"></center></a>
+               
+               </div>
+				 
+				
+								 
+				<!--contatos e email-->
+				
+				<center><p class = "email"style="font-size: 20px;font-family: arial;">Email: thainara.almeida.quimica@gmail.com</p></center>
+
+				<center><p class="copyright" style="font-size: 20px;font-family: arial;"> Desenvolvido por Thainara 2023</p></center>
+	
+</footer>
+
+	</html>
