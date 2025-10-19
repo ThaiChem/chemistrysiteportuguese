@@ -60,42 +60,51 @@
              <div style="padding: 10px 0px 0px 0px;"></div>
 
 
-             <div align="right" style="padding-right: 24px;">
-             <form style="margin: 0px;" name="s02" target="_blank" action="http://www.google.com/search" method="get">
-        
-            <input placeholder="Faça sua pesquisa aqui !" value="Faça sua pesquisa aqui !" maxlength="200" style="
-            background: #FFFFFF center center no-repeat;
-            border-radius: 5px;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-            color: #777777;
-            height: 30px;
-            padding: 0px 30px;
-            width: 301px;" type="text" name="q">
+             <h2>Pesquisar no Site</h2>
 
-        
-            <input type="hidden" name="domains" value="thaichem.github.io/chemistrysiteportuguese/quimicacomthai.html" />
-            <input type="hidden" name="sitesearch" value="thaichem.github.io/chemistrysiteportuguese/quimicacomthai.html">
-            <input type="hidden" name="hl" value="pt-BR">
+    <div class="search-container">
+        <form id="site-search-form" style="display: flex; width: 100%;">
+            <input 
+                type="search" 
+                id="search-input" 
+                placeholder="Faça sua pesquisa aqui !"
+            >
+            <button type="submit" id="search-button">Pesquisar</button>
+        </form>
+    </div>
 
-            </form>
+    <script>
+        // 1. Defina aqui o site onde a pesquisa será realizada
+        const siteUrl = "thaichem.github.io/chemistrysiteportuguese/quimicacomthai.html";
 
-    
-    <script language="javascript">
-        $('input[name="q"]').focus(function(i) {
-            if ($(this).val() == "Faça sua pesquisa aqui !") {
-                $(this).val("");
-            }    
-        });
-        $('input[name="q"]').blur(function(i) {
-            if ($(this).val() == "") {
-                $(this).val("Faça sua pesquisa aqui !");
-            }    
+        // 2. Seleciona os elementos do HTML
+        const searchForm = document.getElementById('site-search-form');
+        const searchInput = document.getElementById('search-input');
+
+        // 3. Adiciona um "ouvinte" para o evento de submissão do formulário
+        searchForm.addEventListener('submit', function(event) {
+            // Previne o comportamento padrão do formulário (que seria recarregar a página)
+            event.preventDefault(); 
+            
+            // Pega o texto digitado pelo usuário e remove espaços em branco extras
+            const query = searchInput.value.trim();
+            
+            // Verifica se o usuário de fato digitou algo
+            if (query) {
+                // 4. Monta a consulta para o Google usando o operador "site:"
+                const fullQuery = `${query} site:${siteUrl}`;
+                
+                // Codifica a consulta para ser usada em uma URL
+                const encodedQuery = encodeURIComponent(fullQuery);
+                
+                // Cria a URL final da pesquisa do Google
+                const googleSearchUrl = `https://www.google.com/search?q=${encodedQuery}`;
+                
+                // 5. Abre a URL da pesquisa em uma nova aba
+                window.open(googleSearchUrl, '_blank');
+            }
         });
     </script>
-</div>
-
-<div style="padding: 10px 0px 0px 0px;"></div>
 
  <!-- barra de pesquisa-->
 
@@ -220,4 +229,5 @@
 		     	
   </body>
   </html>
+
 
